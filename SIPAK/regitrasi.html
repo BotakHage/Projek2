@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SIPAK | Registrasi User</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css" />
+    <!-- icheck bootstrap -->
+    <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css" />
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/adminlte.min.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand mt-2" href="landing page.html">
+          <img src="/dist/img/sttnf.png" alt="" width="35" height="30">
+       Sistem Parkir
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="landing page.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="landing page.html">Berita</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="registrasi kendaraan.html">Registrasi Kendaraan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Register -->            
+        <div class="register-logo" style="margin-top: 10%;">
+            <a href="regitrasi.html"><b>Registrasi User</b></a>
+        </div>
+        
+    <div class="row justify-content-center">
+        <div class="col-md-5" >
+    <form>
+      <div class="form-group row mt-3">
+        <label for="carisika" class="col-4 col-form-label">Cari Sivitas Akademika</label> 
+            <div class="col-8">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <i class="fa fa-search"></i>
+                  </div>
+                </div> 
+                <input id="carisika" name="carisika" type="text" class="form-control">
+              </div>
+            </div>
+          </div>
+        
+        <div class="form-group row">
+          <label for="nama" class="col-4 col-form-label">Nama Lengkap</label> 
+          <div class="col-8">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <i class="fa fa-address-book"></i>
+                </div>
+              </div> 
+              <input id="nama" name="nama" type="text" class="form-control" required="required">
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="prodi" class="col-4 col-form-label">Asal Prodi</label> 
+          <div class="col-8">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <i class="fas fa-graduation-cap"></i>
+                </div>
+              </div> 
+              <input id="prodi" name="prodi" type="text" class="form-control" required="required">
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="uname" class="col-4 col-form-label">Username</label> 
+          <div class="col-8">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <i class="fa fa-address-card"></i>
+                </div>
+              </div> 
+              <input id="uname" name="uname" type="text" class="form-control" required="required">
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="pwd" class="col-4 col-form-label">Password</label> 
+          <div class="col-8">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <i class="fa fa-lock"></i>
+                </div>
+              </div> 
+              <input id="pwd" name="pwd" type="password" class="form-control" required="required">
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="cpwd" class="col-4 col-form-label">Cek Password</label> 
+          <div class="col-8">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <i class="fa fa-lock"></i>
+                </div>
+              </div> 
+              <input id="cpwd" name="cpwd" type="password" class="form-control" required="required">
+            </div>
+          </div>
+        </div> 
+      </form>
+      <div class="form-group row">
+        <div class="offset-4 col-8">
+          <a href="login.html" class="text-white">
+            <button type="submit" class="btn btn-primary btn-block">Daftar</button></a>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- End Register -->
+    
+
+    <!-- jQuery -->
+    <script src="../../plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../../dist/js/adminlte.min.js"></script>
+  </body>
+</html>

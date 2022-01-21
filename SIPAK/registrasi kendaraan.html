@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SIPAK | Registrasi Kendaraan</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css" />
+    <!-- icheck bootstrap -->
+    <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css" />
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/adminlte.min.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand mt-2" href="landing page.html">
+          <img src="dist/img/sttnf.png" alt="" width="35" height="30">
+       Sistem Parkir
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="landing page.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="landing page.html">Berita</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="registrasi kendaraan.html">Registrasi Kendaraan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Register -->            
+        <div class="register-logo" style="margin-top: 10%;">
+            <a href="registrasi kendaraan.html"><b>Registrasi Kendaraan Anda</b></a>
+        </div>
+        
+    <div class="row justify-content-center">
+        <div class="col-md-5" >
+            <form>
+                <div class="form-group row">
+                  <label class="col-4">Status</label> 
+                  <div class="col-8">
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input name="stts" id="stts_0" type="radio" class="custom-control-input" value="mahasiswa"> 
+                      <label for="stts_0" class="custom-control-label">Mahasiswa</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input name="stts" id="stts_1" type="radio" class="custom-control-input" value="dosen"> 
+                      <label for="stts_1" class="custom-control-label">Dosen</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="nim" class="col-4 col-form-label">NIM</label> 
+                  <div class="col-8">
+                    <input id="nim" name="nim" type="number" class="form-control" required="required">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="nama" class="col-4 col-form-label">Nama Lengkap</label> 
+                  <div class="col-8">
+                    <input id="nama" name="nama" type="text" class="form-control"  required="required">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="prodi" class="col-4 col-form-label">Prodi</label> 
+                  <div class="col-8">
+                    <select id="prodi" name="prodi" class="custom-select">
+                      <option value="">Pilih Prodi</option>
+                      <option value="ti">Teknik Informatika</option>
+                      <option value="si">Sistem Informaasi</option>
+                      <option value="bd">Bisnis Digital</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-4">Jenis Kendaraan</label> 
+                  <div class="col-8">
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input name="jeniskendaraan" id="jeniskendaraan_0" type="radio" class="custom-control-input" value="motor"> 
+                      <label for="jeniskendaraan_0" class="custom-control-label">Motor</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input name="jeniskendaraan" id="jeniskendaraan_1" type="radio" class="custom-control-input" value="mobil"> 
+                      <label for="jeniskendaraan_1" class="custom-control-label">Mobil</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="nopol" class="col-4 col-form-label">NoPol</label> 
+                  <div class="col-8">
+                    <input id="nopol" name="nopol" type="text" class="form-control" required="required">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="merk" class="col-4 col-form-label">Merk</label> 
+                  <div class="col-8">
+                    <input id="merk" name="merk" type="text" class="form-control" required="required">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="stnk" class="col-4 col-form-label">Upload STNK</label> 
+                  <div class="col-8">
+                    <input id="stnk" name="stnk" type="file" class="form-control" required="required">
+                  </div>
+                </div> 
+                <div class="form-group row">
+                  <div class="offset-4 col-8">
+                   
+                     <div class="offset-4 col-8">
+                      <div class="offset-4 col-8">
+                        <button type="submit" class="btn btn-primary btn-block"><a href="data kendaraan.html" class="text-white">Daftar</a></button>
+                  </div>
+                </div>
+              </form>
+        </div>
+    </div>
+    <!-- End Register -->
+    
+
+    <!-- jQuery -->
+    <script src="../../plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../../dist/js/adminlte.min.js"></script>
+  </body>
+</html>
